@@ -1,75 +1,14 @@
-#mapa-mapbox{
-    width:100%;
-    height: 280px;
-}
+export const environment = {
+  production: true,
+  mapboxKey: 'pk.eyJ1IjoicmFjaG90aSIsImEiOiJja2NocHRucTcwZjcwMnJzNTNzZm9kc3FnIn0.z-uCrMB3LBpuMR6PfC_97w'
+};
 
 
 
-<div id="mapa-mapbox"></div>
 
 
-
-import { Component, OnInit } from '@angular/core';
-import {MapboxService} from './mapbox.service';
-import { environment } from 'src/environments/environment';
-import * as Mapboxgl from 'mapbox-gl';
-@Component({
-  selector: 'app-map',
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.css']
-})
-export class MapComponent implements OnInit {
-  mapa: Mapboxgl.Map;
-  constructor() { }
-
+export const environment = {
+  production: false,
+  mapboxKey: 'pk.eyJ1IjoicmFjaG90aSIsImEiOiJja2NocHRucTcwZjcwMnJzNTNzZm9kc3FnIn0.z-uCrMB3LBpuMR6PfC_97w'
   
-  ngOnInit() {
-    Mapboxgl.accessToken = environment.mapboxKey;
-    this.mapa = new Mapboxgl.Map({
-      container: 'mapa-mapbox', // container id
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: [12.9580388,77.6750113], // starting position
-      zoom: 16.6 // starting zoom
-      
-      });
-      var marker = new Mapboxgl.Marker()
-      .setLngLat([12.9580388,77.6750113])
-      .addTo(this.mapa);
-  }
-
-
-}
-
-
-
-
-
-
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import * as L from 'leaflet';
-@Injectable({
-  providedIn: 'root'
-})
-export class MapService {
-  capitals: string = '/assets/data/usa-capitals.geojson';
-  //console.log(capitals);
-  constructor(private http: HttpClient) {
-  }
-
-  makeCapitalMarkers(map: L.Map): void {
-    this.http.get(this.capitals).subscribe((res: any) => {
-      for (const c of res.features) {
-        const lat = c.geometry.coordinates[0];
-        const lon = c.geometry.coordinates[1];
-        const marker = L.marker([lon, lat]).addTo(map);
-      }
-    });
-  }
-}
-
-
-
-
-
-https://www.youtube.com/watch?v=gdKWeboPxgY
+};
