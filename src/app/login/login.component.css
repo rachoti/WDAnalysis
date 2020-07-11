@@ -1,0 +1,108 @@
+.container{
+    background-image: url("../../assets/bg.png");
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0px;
+    top: 0px;
+    z-index: -100;
+  }
+  .rightform{
+    width: 40%;
+    margin-left: 60%;
+    height: 100%;
+  }
+  .title{
+    font-size: 26px;
+    margin-top: 15%;
+    position: fixed;
+    margin-left: 15%;
+    font-family: sans-serif;
+    font-weight: bold; 
+    font-family: 'Noto Sans SC', sans-serif;
+  }
+  .username{
+    margin-top: 50%;
+    margin-left: 22%;
+    border-radius: 20px;
+    width: 55%;
+    height: 30px;
+    border-style: groove;
+    border-color: grey;
+    outline: none;
+    padding-left: 20px;
+    font-size: 15px;
+    background-image: url("../../assets/user_icon.png");
+    background-position: 95%;
+    background-size: 20px;
+		background-repeat: no-repeat;
+		-webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    font-family: 'Noto Sans SC', sans-serif;
+  }
+  .password{
+    margin-top: 8%;
+    margin-left: 22%;
+    border-radius: 20px;
+    width: 55%;
+    height: 30px;
+    border-style: groove;
+    border-color: grey;
+    outline: none;
+    padding-left: 20px;
+    font-size: 15px;
+    background-image: url("../../assets/password.png");
+    background-position: 95%;
+    background-size: 20px;
+		background-repeat: no-repeat;
+		-webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    font-family: 'Noto Sans SC', sans-serif;
+  }
+  .loginbtn{
+    margin-top: 8%;
+    margin-left: 22%;
+    border-radius: 20px;
+    width: 60%;
+    height: 38px;
+    border:none;
+    background-image: linear-gradient(to right, #B1137F, #4F1694);
+    font-family: 'Noto Sans SC', sans-serif;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: grey;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: grey;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: grey;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: grey;
+  }
+  .working{
+    width: 180px;
+    height: 170px;
+    margin-left: 22%;
+    margin-top: 25%;
+}
+  .circle{
+    border: 3px dotted white;
+    width: 315px;
+    height: 315px;
+    position: absolute;
+    border-radius: 170px;
+    top: 44%;
+    left: 15%;
+  }
+  .headtxt{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 24px;
+    left: 20%;
+  }

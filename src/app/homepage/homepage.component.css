@@ -1,0 +1,147 @@
+.navBar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 45px;
+    background-image: linear-gradient(to right, #B1137F , #4F1694);
+}
+.profileImg{
+    position: absolute;
+    top:3px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    right: 15px;
+}
+.profileName{
+    position: absolute;
+    top:12px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    right: 120px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+}
+.headline{
+    margin-top: 10%;
+    text-align: center;
+    text-shadow: 4px 4px 10px #666565;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+}
+.container{
+    background-image: url("../../assets/background.png");
+    width: 100%;
+    position: fixed;
+    height: 700px;
+    left: 0px;
+    top: 0px;
+
+}
+.card1{
+    position: absolute ;
+    top: 250px;
+    left: 120px;
+    height: 120px;
+    width: 15%;
+    background-color: white;
+    box-shadow: 7px 7px 5px grey;
+}
+.card2{
+    position: absolute ;
+    top: 250px;
+    left: 540px;
+    height: 120px;
+    width: 15%;
+    background-color: white;
+    box-shadow: 7px 7px 5px grey;
+}
+.card3{
+    position: absolute;
+    top: 250px;
+    left: 970px;
+    height: 120px;
+    width: 15%;
+    background-color: white;
+    box-shadow: 7px 7px 5px grey;
+}
+.card4{
+    position: absolute ;
+    top: 440px;
+    left: 120px;
+    height: 120px;
+    width: 15%;
+    background-color: white;
+    box-shadow: 7px 7px 5px grey;
+}
+.card5{
+    position: absolute ;
+    top: 440px;
+    left: 540px;
+    height: 120px;
+    width: 15%;
+    background-color: white;
+    box-shadow: 7px 7px 5px grey;
+}
+.card6{
+    position: absolute ;
+    top: 440px;
+    left: 970px;
+    height: 120px;
+    width: 15%;
+    background-color: white;
+    box-shadow: 7px 7px 5px grey;
+}
+.NValue{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 80px;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #666565;
+    font-family: 'Bree Serif', serif;
+}
+.speedtest{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 80px;
+    width: 50px;
+    height: 50px;
+}
+.BWindow{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 70px;
+    width: 70px;
+    height: 70px;
+}
+.sScheduler{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 60px;
+    width: 70px;
+    height: 70px;
+}
+.lineGraph{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 60px;
+    width: 70px;
+    height: 70px;
+}
+.star{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 70px;
+    width: 60px;
+    height: 60px;
+}
+.report{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 70px;
+    width: 50px;
+    height: 60px;
+}
