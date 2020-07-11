@@ -1,20 +1,367 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>WAnalysis</title>
-  <base href="/">
+.navBar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 45px;
+    background-image: linear-gradient(to right, #B1137F , #4F1694);
+}
+.logo{
+    position: absolute;
+    font-size:20px;
+    color: white;
+    top: 8px;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+} 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&family=Suez+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,URL"></script>
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <app-root></app-root>
-</body>
-</html>
+.profileImg{
+    position: absolute;
+    top:3px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    right: 15px;
+}
+.profileName{
+    position: absolute;
+    top:12px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    right: 120px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+}
+.container{
+    background-image: url("../../assets/background.png");
+    width: 100%;
+    position: fixed;
+    height: 700px;
+    left: 0px;
+    top: 0px;
+
+}
+.slidebar{
+    height:800px;
+    width: 16%;
+    background-image: linear-gradient(#B1137F , #4F1694);
+}
+.menu{
+    position: absolute;
+    left: 20px;
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+}
+.btnTrans{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+    outline:none;
+}
+.one {
+    top: 100px; 
+}
+.hov:hover{
+    font-size: 18px;
+}
+.four{
+    top: 140px;
+}
+.five{
+    top: 180px;
+}
+.six{
+    top: 220px;
+}
+.seven{
+    top: 260px;
+}
+.eight{
+    top:300px;
+}
+.subHide{
+    display: none;
+    font-size: 14px;
+}
+.rightDivTop{
+    border: 2px solid black;
+    position: absolute;
+    right: 20px;
+    top: 55px;
+    width: 61%;
+    height: 280px;
+}
+.rightDiv{
+    border: 2px solid black;
+    position: absolute;
+    right: 20px;
+    top: 350px;
+    width: 32%;
+    height: 280px;
+}
+.leftDivTop{
+    border: 2px solid black;
+    position: absolute;
+    left: 17%;
+    top: 55px;
+    width: 20%;
+    height: 280px;
+}
+.middle{
+    border: 2px solid black;
+    position: absolute;
+    margin-left: 49%;
+    top: 350px;
+    width: 15%;
+    height: 280px;
+}
+.leftDiv{
+    border: 2px solid black;
+    position: absolute;
+    left: 17%;
+    top: 350px;
+    width: 32%;
+    height: 280px;
+}
+.claim1{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 150px;
+    height: 100px;
+    border: 2px solid black;
+}
+.claim2{
+    position: absolute;
+    margin-left: 190px;
+    top: 20px;
+    width: 160px;
+    height: 100px;
+    border: 2px solid black;
+}
+.claim3{
+    position: absolute;
+    margin-left: 370px;
+    top: 20px;
+    width: 155px;
+    height: 100px;
+    border: 2px solid black;
+}
+.claim4{
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 150px;
+    height: 100px;
+    border: 2px solid black;
+}
+.claim5{
+    position: absolute;
+    margin-left: 190px;
+    top: 150px;
+    width: 160px;
+    height: 100px;
+    border: 2px solid black;
+}
+.claim6{
+    position: absolute;
+    margin-left: 370px;
+    top: 150px;
+    width: 155px;
+    height: 100px;
+    border: 2px solid black;
+}
+.count{
+    position: absolute;
+    margin-top: 20px;
+    font-size: 32px;
+    margin-left: 40px;
+}
+.letter{
+    position: absolute;
+    margin-top: 50px;
+    font-size: 22px;
+    margin-left: 42px;
+} 
+.avr{
+    margin-top: 3%;
+    height: 28%;
+}
+.rev{
+    margin-top: 5%;
+    height: 28%;
+}
+.tcu{
+    margin-top: 5%;
+    height: 28%;
+}
+.avrCount{
+    position: absolute;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-left: 60px;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+}
+.arvName{
+    position: absolute;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="navBar">
+    <label class="logo">Warrent Data Analysis</label>
+    <img class="profileImg" src="../../assets/profileImg.png"/>
+    <label class="profileName">RACHAYYA</label>
+  </div>
+  <div class="slidebar">
+    <button class="menu one hov btnTrans" (click)="redirect('one');">Role-Based Dashboard</button>
+    <button class="menu two subHide btnTrans">Section One</button>
+    <button class="menu three subHide btnTrans">Section Two</button>
+    <button class="menu four hov btnTrans">Online Claim Form</button>
+    <button class="menu five hov btnTrans">Claim Management</button>
+    <button class="menu six hov btnTrans">Service Scheduler</button>
+    <button class="menu seven hov btnTrans">Advanced Reporting</button>
+    <button class="menu eight hov btnTrans">Satiafaction Surveys</button>
+  </div>
+  <div class="leftDivTop">
+    <!-- <app-map>RACHAYYA</app-map> -->
+  </div>
+  <div class="leftDiv">
+    <!-- <app-map></app-map> -->
+  </div>
+  <div class="rightDivTop">
+
+    
+  </div>
+  <div class="middle">
+    <div class="avr">
+      <label class="arvName">Average</label>
+      <label class="avrCount">25,000</label>
+    </div>
+    <div class="rev">
+      <label class="arvName">Total Customer</label>
+      <label class="avrCount">25,000</label>
+    </div>
+    <div class="tcu">
+      <label class="arvName">Revenue</label>
+      <label class="avrCount">25,000</label>
+    </div>
+  </div>
+  <div class="rightDiv">
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+@Component({
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
+})
+export class DashboardComponent implements OnInit {
+
+  count=0;
+  constructor() { }
+
+  ngOnInit() {
+
+  }
+  redirect(path){
+    if(path==="one" && this.count<=1){
+      this.count=this.count+1;
+      $(".subHide").css("display", "block");
+      $(".subHide").css("left", "30PX");
+      $(".two").css("top", "140px");
+      $(".three").css("top", "180px");
+      $(".four").css("top", "220px");
+      $(".five").css("top", "260px");
+      $(".six").css("top", "300px");
+      $(".seven").css("top", "340px");
+      $(".eight").css("top", "380px");
+//RACH
+    }else{
+      this.count=this.count-1;
+      $(".subHide").css("display", "none");
+      $(".subHide").css("left", "30PX");
+      $(".four").css("top", "140px");
+      $(".five").css("top", "180px");
+      $(".six").css("top", "220px");
+      $(".seven").css("top", "260px");
+      $(".eight").css("top", "300px");
+    }
+  }
+
+}
+
+
+
+
+
+
